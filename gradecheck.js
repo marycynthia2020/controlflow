@@ -1,3 +1,5 @@
+// Write a program that transforms a numerical grade to a letter grade (0-44: F, 45-49: D, 50-59: C, 60-69: B, 70-100: A).
+
 function grade(score) {
   if (score > 100 || score < 0) {
     console.log("invalid score");

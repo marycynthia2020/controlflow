@@ -1,3 +1,5 @@
+// Write a program that determines whether a given number is positive or negative.
+
 function positiveORNegativeNumber(num) {
   if (num === 0) {
     console.log(`${num} is neither positive nor negative`);
