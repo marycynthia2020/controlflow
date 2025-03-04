@@ -1,7 +1,9 @@
 // Write a program that calculates a discount based on the purchase amount. Prices equal or over 100 discount have a discount of 20. Prices equal or over 50 have a discount of 10. Otherwise discount is 0
 
 function discount(price) {
-  if (price >= 100) {
+  if (typeof price !== "number") {
+    console.log("enter a valid price");
+  } else if (price >= 100) {
     console.log(`you have a discount of #20`);
   } else if (price >= 50) {
     console.log(`you have a discount of #10`);
@@ -11,7 +13,7 @@ function discount(price) {
 }
 
 // example
-discount(100);
+discount("");
 discount(0);
 discount(30);
 discount(45);
