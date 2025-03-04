@@ -3,7 +3,9 @@
 // using if/else statement
 
 function greaterNumber(num1, num2) {
-  if (num1 === num2) {
+  if (typeof num1 !== "number" || typeof num2 !== "number") {
+    console.log(`enter a valid number`);
+  } else if (num1 === num2) {
     console.log(`${num1} and ${num2} are equal`);
   } else if (num1 > num2) {
     console.log(`${num1} is greater than ${num2}`);
@@ -21,5 +23,5 @@ function greaterNumberT(num1, num2) {
     : console.log(`${num2} is greater than ${num1}`);
 }
 
-greaterNumber(1502, 1502);
+greaterNumber("1502", "1502");
 greaterNumberT(2000, 23);

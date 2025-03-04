@@ -1,7 +1,9 @@
 // Write a program that determines whether a given number is positive or negative.
 
 function positiveORNegativeNumber(num) {
-  if (num === 0) {
+  if (typeof num !== "number") {
+    console.log("input a valid number");
+  } else if (num === 0) {
     console.log(`${num} is neither positive nor negative`);
   } else if (num < 0) {
     console.log(`${num} is a negative number`);
@@ -10,9 +12,7 @@ function positiveORNegativeNumber(num) {
   }
 }
 
-// example
-
-positiveORNegativeNumber(-1);
-positiveORNegativeNumber(-4);
+positiveORNegativeNumber(".");
+positiveORNegativeNumber("a");
 positiveORNegativeNumber(1);
 positiveORNegativeNumber(0);
